@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --color-active: #5932EA;
+    --color-true: rgba(22, 192, 152, 0.38);
+    --color-true-text: #008767;
+    --color-border-true: #00b087;
+    --color-false: #ffc5c5;
+    --color-false-text: #df0404;
+    --color-border-false: #df0404; 
+    --color-nav-link: #9197b3;
+    --bg-color: #fafbff;
+    --color-text-light:#b5b7c0;
+    --color-text-dark: #292d32;
+}
+a, img, span, input {
+    display: block;  
+}
+a {
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-align {
+    align-items: center;
+}
+.flex-align-end {
+    align-items: flex-end;
+}
+body {
+    background-color: var(--bg-color);
+}
+.desktop {
+    display: block;
+    background-color: #fff;
+    padding: 36px 28px 0 28px;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+}
+.mobile {
+    display: none;
+    padding: 15px;
+}
+.mobile .burger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mobile .burger span {
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--color-text-light);
+}
+.logo {
+    width: 217px;
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 39px;
+    margin-bottom: 64px;
+}
+.logo span {
+    color: var(--color-text-light);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 29px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    padding: 11px 8px;
+    margin-bottom: 18px;
+}
+nav ul .active-link {
+    background-color: var(--color-active);
+    border-radius: 8px;
+}
+nav ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-nav-link);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+nav ul li a div img {
+    margin-right: 14px;
+}
+nav ul .active-link a {
+    color: #fff;
+}
+.user-info {
+    position: absolute;
+    bottom: 76px;
+    width: 155px;
+}
+.user-info h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+.user-info p {
+    color: var(--color-text-light);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.content {
+    padding: 41px 377px;
+}
+.content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px; 
+    margin-bottom: 51px;
+}
+.content .content-customers {
+    width: 968px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5); 
+    background-color: #fff;
+    padding: 30px 38px 44px 41px;
+}
+.content .content-customers .content-customers__head {
+    width: 877px;
+    margin-bottom: 49px;
+}
+.content .content-customers .content-customers__head .content-customers__head__title h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    margin-bottom: 7px;
+}
+.content .content-customers .content-customers__head .content-customers__head__title h4 {
+    color: var(--color-true);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.content .content-customers .content-customers__head input {
+    appearance: none;
+    width: 216px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    padding: 10px 0 10px 40px;
+    background-image: url(img/icon_search.png);
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+.content .content-customers .content-customers__head ::-webkit-input-placeholder {
+    line-height: 18px;
+    font-size: 12px;
+    color: var(--color-text-light);
+}
+.content .content-customers table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+.content .content-customers table th {
+    padding-bottom: 13.5px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--color-text-light);
+    text-align: left;
+}
+.content .content-customers table td {
+    color: var(--color-text-dark);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 24.5px 0 23.5px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.content .content-customers table td .active {
+    padding: 4px 12px 4px 12px;
+    width: 80px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--color-true-text);
+    background-color: var(--color-true);
+    border-radius: 4px;
+    border: 1px solid var(--color-border-true);
+    text-align: center;
+} 
+.content .content-customers table td .inactive {
+    padding: 4px 12px 4px 12px;
+    width: 80px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--color-false-text);
+    background-color: var(--color-false);
+    border-radius: 4px;
+    border: 1px solid var(--color-border-false);
+    text-align: center;
+} 
+.content .content-customers .pagination-panel p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--color-text-light);
+}
+.content .content-customers .pagination-panel .pagination {
+    width: 271px;
+}
+.content .content-customers .pagination-panel .pagination a {
+    background-color: var(--bg-color);
+    padding: 6px 9px 6px 9px;
+    border-radius: 4px;
+    border: 1px solid rgb(238, 238, 238);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+    color: var(--color-text-dark);
+}
+.content .content-customers .pagination-panel .pagination .active-pag {
+    background-color: var(--color-active);
+    color: #fff;
+}

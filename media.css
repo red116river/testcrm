@@ -1,0 +1,61 @@
+@media screen and (max-width: 576px) {
+    .flex-dir {
+        flex-direction: column;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .content {
+        padding: 20px;
+    }
+    .content h2 {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+    }
+    .content .content-customers {
+        width: 550px;
+        padding: 25px;
+    }
+    .content .content-customers .content-customers__head {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .content .content-customers .content-customers__head .content-customers__head__title h3 {
+        font-size: 1.1em;
+        margin-bottom: 0px;
+    }
+    .content .content-customers .content-customers__head .content-customers__head__title h4 {
+        color: var(--color-true);
+        font-weight: 400;
+        font-size: 0.8em;
+
+    }
+    .content .content-customers table {
+        overflow: auto;
+    }
+    .content .content-customers table th {
+        padding-bottom: 5px;
+    }
+    .content .content-customers table th, .content .content-customers table td {
+        width: 10%;
+        font-size: 0.7em;
+        padding: 10px 0;
+    }
+    .content .content-customers table td .active, .content .content-customers table td .inactive {
+        font-size: 0.8em;
+        padding: 4px 8px;
+        width: 60px;
+    }
+    .content .content-customers .pagination-panel p {
+        font-size: 0.7em;
+    }
+    .content .content-customers .pagination-panel .pagination {
+        width: 240px;
+    }
+    .content .content-customers .pagination-panel .pagination a {
+        font-size: 0.6em;
+    }
+}
